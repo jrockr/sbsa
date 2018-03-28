@@ -1,5 +1,8 @@
 package com.standardbank.assignmentc740129.assignment1;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class DivideAndRule {
 
   public int divideby8(int value){

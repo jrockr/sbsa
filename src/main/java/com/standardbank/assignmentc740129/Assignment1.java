@@ -4,16 +4,21 @@ import com.standardbank.assignmentc740129.assignment1.DivideAndRule;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+
+
 
 @SpringBootApplication
 public class Assignment1 implements CommandLineRunner {
+
+  @Autowired
+  private DivideAndRule rule;
 
   private final Logger logger = LoggerFactory.getLogger(Assignment1.class);
 
@@ -26,7 +31,7 @@ public class Assignment1 implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    DivideAndRule rule = new DivideAndRule();
+
     logger.info("Running Divedand Rule Assignment ..");
     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     logger.info("Input number of test Cases");
