@@ -1,7 +1,7 @@
 # sbsa assignmnets
 To Download and install the projects 
 
-git clone 
+git clone https://github.com/jrockr/sbsa.git
 
 #To run the jar
 
