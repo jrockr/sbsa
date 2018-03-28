@@ -5,34 +5,26 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Service;
+
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 
 
-@SpringBootApplication
-public class Assignment1 implements CommandLineRunner {
+@Service
+public class Assignment1 {
 
   @Autowired
   private DivideAndRule rule;
 
   private final Logger logger = LoggerFactory.getLogger(Assignment1.class);
 
-  public static void main(String[] args) throws Exception {
 
-    SpringApplication.run(Assignment1.class, args);
-
-
-  }
-
-  @Override
   public void run(String... args) throws Exception {
 
-    logger.info("Running Divedand Rule Assignment ..");
+    logger.info("Running Assignment 1");
     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     logger.info("Input number of test Cases");
     int testCase = Integer.parseInt(in.readLine());
