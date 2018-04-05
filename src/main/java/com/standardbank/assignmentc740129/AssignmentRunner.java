@@ -14,10 +14,14 @@ public class AssignmentRunner implements CommandLineRunner {
   @Autowired
   Assignment2 assignment2;
 
+  @Autowired
+  Assignment3 assignment3;
+
   @Override
   public void run(String... args) throws Exception {
-    assignment1.run();
-    assignment2.run();
+    //assignment1.run();
+    //assignment2.run();
+    assignment3.run();
   }
 
   public static void main(String[] args) throws Exception {
